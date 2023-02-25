@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    overflow-x: hidden;
+    background-image: url('universo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+body{
+    position: relative;
+}
+.wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 30px;
+    color: #ffe4b8;
+    text-align: center;
+}
+.imagem{
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid #ffedcf;
+    box-shadow: 0 0 60px #ffe4b8;
+    animation: borderBlink ease-in-out infinite 4s;
+}
+.name{
+    color: #ffe4b8;
+    text-decoration: underline;
+}
+.slider >h1{
+    padding-top: 30px;
+}
+.p{
+    padding: 10px 0;
+}
+.slider, .slider2{
+    background: radial-gradient(circle, rgb(0, 178, 92) 0%, rgba(0,118,45,1) 66%);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 60%;
+    min-width: 300px;
+    box-shadow: 0px 0px 60px rgb(248, 32, 255);
+}
+h1{
+    margin: 40px 0;
+    text-decoration: overline underline double;
+    color: rgb(250, 103, 255);
+    text-shadow: 3px 3px #000;
+}
+.slider >h2, .slider2>h2{
+    padding: 10px 0;
+}
+.button{
+    width: 60%;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    background: radial-gradient(circle, rgb(0, 178, 92) 0%, rgb(0, 195, 75) 66%);
+    height: 40px;
+    border-radius: 10px;
+    margin: 50px 0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s;
+}
+.button:hover{
+    transform: scale(1.05);
+}
+.linkWhats{
+    position: fixed;
+    cursor: pointer;
+    right: 5%;
+    bottom: 50%;
+    animation: whatsFloat 4s infinite ease-in-out;
+}
+.logoWhats{
+    width: 4rem;
+}
+@keyframes whatsFloat {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }   
+}
+@keyframes borderBlink{
+    0%{
+        border: 5px solid #ffedcf;
+        box-shadow: 0 0 60px #ffe4b8;
+    }
+    50%{
+        border: 5px solid rgb(250, 103, 255);
+        box-shadow: 0 0 60px rgb(250, 103, 255);
+    }
+    100%{
+        border: 5px solid #ffedcf;
+        box-shadow: 0 0 60px #ffe4b8;
+    }
+}
+@media screen and (max-width:590px){
+    .slider, .slider2, .button{
+        width: 100%;
+    }
+}
