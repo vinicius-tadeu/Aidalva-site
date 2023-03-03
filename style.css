@@ -42,7 +42,7 @@ hr{
     padding: 10px 0;
 }
 .slider, .slider2{
-    background: radial-gradient(circle, #2cc3c5 0%, #2b9698 66%);
+    background: radial-gradient(circle, #30dee1 0%, #3bc1c3 66%);
     border-radius: 20px;
     overflow: hidden;
     width: 60%;
@@ -58,6 +58,7 @@ h1{
 }
 .slider >h2, .slider2>h2{
     padding: 10px 0;
+    font-size: 1.2rem;
 }
 .button{
     width: 60%;
@@ -65,7 +66,7 @@ h1{
     color: #fff;
     font-size: 22px;
     font-weight: bold;
-    background: radial-gradient(circle, rgb(0, 178, 92) 0%, rgb(0, 195, 75) 66%);
+    background: radial-gradient(circle, rgb(10, 178, 92) 0%, rgb(0, 195, 75) 66%);
     height: 40px;
     border-radius: 10px;
     margin: 50px 0;
