@@ -5,7 +5,7 @@
 }
 html, body{
     overflow-x: hidden;
-    background-image: url('universo.jpg');
+    background-image: url('Fundo.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -28,9 +28,12 @@ body{
     box-shadow: 0 0 60px #ffe4b8;
     animation: borderBlink ease-in-out infinite 4s;
 }
+hr{
+    border-color: #000;
+}
 .name{
-    color: #ffe4b8;
-    text-decoration: underline;
+    color: #fff;
+    text-decoration: none;
 }
 .slider >h1{
     padding-top: 30px;
@@ -39,18 +42,19 @@ body{
     padding: 10px 0;
 }
 .slider, .slider2{
-    background: radial-gradient(circle, rgb(0, 178, 92) 0%, rgba(0,118,45,1) 66%);
+    background: radial-gradient(circle, #2cc3c5 0%, #2b9698 66%);
     border-radius: 20px;
     overflow: hidden;
     width: 60%;
     min-width: 300px;
-    box-shadow: 0px 0px 60px rgb(248, 32, 255);
 }
 h1{
     margin: 40px 0;
-    text-decoration: overline underline double;
-    color: rgb(250, 103, 255);
-    text-shadow: 3px 3px #000;
+    color: #fff;
+    background: radial-gradient(circle, #2cc3c5 0%, #2b9698 66%);
+    border: 2px solid #10cfff;
+    border-radius: 5px;
+    padding: 5px;
 }
 .slider >h2, .slider2>h2{
     padding: 10px 0;
