@@ -1,122 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
 }
 html, body{
-    overflow-x: hidden;
-    background-image: url('Fundo.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    height: 100%;
 }
 body{
-    position: relative;
+    background-image: url('Quartzo.avif');
+    background-size: cover;
 }
-.wrapper{
+.perfilWrapper{
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    padding-top: 30px;
-    color: #ffe4b8;
-    text-align: center;
+    justify-content: right;
 }
-.imagem{
-    width: 200px;
-    border-radius: 50%;
-    border: 5px solid #ffedcf;
-    box-shadow: 0 0 60px #ffe4b8;
-    animation: borderBlink ease-in-out infinite 4s;
-}
-hr{
-    border-color: #000;
-}
-.name{
-    color: #fff;
-    text-decoration: none;
-}
-.slider >h1{
-    padding-top: 30px;
-}
-.p{
-    padding: 10px 0;
-}
-.slider, .slider2{
-    background: radial-gradient(circle, #30dee1 0%, #3bc1c3 66%);
-    border-radius: 20px;
-    overflow: hidden;
-    width: 60%;
-    min-width: 300px;
-}
-h1{
-    margin: 40px 0;
-    color: #fff;
-    background: radial-gradient(circle, #2cc3c5 0%, #2b9698 66%);
-    border: 2px solid #10cfff;
-    border-radius: 5px;
-    padding: 5px;
-}
-.slider >h2, .slider2>h2{
-    padding: 10px 0;
-    font-size: 1.2rem;
-}
-.button{
-    width: 60%;
-    border: none;
-    color: #fff;
-    font-size: 22px;
-    font-weight: bold;
-    background: radial-gradient(circle, rgb(10, 178, 92) 0%, rgb(0, 195, 75) 66%);
-    height: 40px;
-    border-radius: 10px;
-    margin: 50px 0;
-    text-decoration: none;
+.perfil{
+    margin-top: 20px;
+    background-color: #a4b895;
+    box-shadow: -20px 0 0 #435430;
+    width: 85%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    transition: transform 1s;
-}
-.button:hover{
-    transform: scale(1.05);
-}
-.linkWhats{
-    position: fixed;
-    cursor: pointer;
-    right: 5%;
-    bottom: 50%;
-    animation: whatsFloat 4s infinite ease-in-out;
-}
-.logoWhats{
-    width: 4rem;
-}
-@keyframes whatsFloat {
-    0%{
-        transform: translateY(0);
-    }
-    50%{
-
-        transform: translateY(10px);
-    }
-    100%{
-        transform: translateY(0);
-    }   
-}
-@keyframes borderBlink{
-    0%{
-        border: 5px solid #ffedcf;
-        box-shadow: 0 0 60px #ffe4b8;
-    }
-    50%{
-        border: 5px solid rgb(250, 103, 255);
-        box-shadow: 0 0 60px rgb(250, 103, 255);
-    }
-    100%{
-        border: 5px solid #ffedcf;
-        box-shadow: 0 0 60px #ffe4b8;
-    }
-}
-@media screen and (max-width:590px){
-    .slider, .slider2, .button{
-        width: 100%;
-    }
+    justify-content: left;
+    border-top-left-radius:150px;
+    border-bottom-left-radius:150px;
 }
