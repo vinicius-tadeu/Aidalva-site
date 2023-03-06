@@ -12,6 +12,7 @@ html, body{
 body{
     background-image: url('Quartzo.avif');
     background-size: cover;
+    background-attachment: fixed;
 }
 .perfilWrapper{
     display: flex;
