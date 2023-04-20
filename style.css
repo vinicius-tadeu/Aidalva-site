@@ -73,13 +73,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   margin: auto 0;
+  height: 100%;
 }
 .curso{
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
   align-items: center;
   margin: 2.5% 0;
   padding: 2.5% 0;
