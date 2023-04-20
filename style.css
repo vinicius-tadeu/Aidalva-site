@@ -1,39 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
 }
-html, body{
-    height: 100%;
-    animation: onLoad 2s linear;
+html,
+body {
+  height: 100%;
+  animation: onLoad 2s linear;
 }
-body{
-    background-image: url('Quartzo.avif');
-    background-size: cover;
-    background-attachment: fixed;
+body {
+  background-image: url("Quartzo.avif");
+  background-size: cover;
+  background-attachment: fixed;
 }
-.perfilWrapper{
-    display: flex;
-    justify-content: right;
+.perfilWrapper {
+  display: flex;
+  justify-content: right;
 }
-.perfil{
-    margin-top: 20px;
-    background-color: #a4b895;
-    box-shadow: -20px 0 0 #435430;
-    width: 85%;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    border-top-left-radius:150px;
-    border-bottom-left-radius:150px;
+.perfil {
+  margin-top: 20px;
+  background-color: #a4b895;
+  box-shadow: -20px 0 0 #435430;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  border-top-left-radius: 150px;
+  border-bottom-left-radius: 150px;
 }
+.menu-burger {
+  display: flex;
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  width: 60px;
+  height: 50px;
+  border: none;
+  background-color: #44b3d7;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.menu-burger img {
+  cursor: pointer;
+}
+.menu-burger > ul {
+  position: absolute;
+  list-style: none;
+  top: 100%;
+  left: 0;
+  width: 60px;
+  height: 0px;
+  overflow: hidden;
+  background-color: #44b3d7;
+  color: #fff;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition: height 0.3s ease-in-out;
+}
+.menu-burger li {
+  border-top: 5px solid #50d3ff;
+  padding: 20px 0;
+  cursor: pointer;
+}
+.menu-burger a{
+  text-decoration: none;
+  color: #fff;
+}
+.cursos{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 2.5% 0;
+  padding: 2.5% 0;
+}
+.cursos a{
+  width: 50%;
+}
+
+details {
+  padding: 10px;
+}
+
+details summary {
+  cursor: pointer;
+  transition: margin 300ms ease-out;
+}
+details[open] summary {
+  margin-bottom: 10px;
+}
+
+
 @keyframes onLoad {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
