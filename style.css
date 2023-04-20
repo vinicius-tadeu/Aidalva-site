@@ -71,14 +71,21 @@ body {
 }
 .cursos{
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  margin: auto 0;
+}
+.curso{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   align-items: center;
   margin: 2.5% 0;
   padding: 2.5% 0;
 }
-.cursos a{
-  width: 50%;
+.curso a{
+  width: 70%;
 }
 
 details {
